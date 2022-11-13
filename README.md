@@ -101,10 +101,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
     - Bus Arrival
     - Profile
 
-
-## Demo ##
-Our application could be accessed at: ___________________
-
 ### Dummy Account for Professors ###
 > To skip registration, you may use this account: <br>
 > Sign in via manual input<br>
