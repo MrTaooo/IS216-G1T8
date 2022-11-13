@@ -329,14 +329,14 @@ export default {
                                                                         //   bus arr
                                                                         arr += ` 
                                                           <td>
-                                                              <img id="bus" src="${this.busarrivallogo}">
+                                                              <img id="bus" style='width:10%' src="${this.busarrivallogo}">
                                                               <span style="color:red;">${busArr}</span>
                                                           </td>
                                                           `
                                                                     } else {
                                                                         arr += ` 
                                                           <td>
-                                                              <img id="bus" src="${this.buslogo}"> ${busArr}
+                                                              <img id="bus" style='width:10%' src="${this.buslogo}"> ${busArr}
                                                           </td>
                                                           `
                                                                     }
