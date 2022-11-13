@@ -65,20 +65,24 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-```
 ### As TravelSG is currently running using our firebase configs, in order to change certain firebase logic OR host your own TravelSG app please continue from step 4 onwards
+```
 4. To create host TravelSG on your own firebase account, go to Google Firebase by clicking [here](https://console.firebase.google.com/) and click create a project.
 5. Enter your project name and create your firebase project accordingly!
 6. On the left hand side of the navigation bar, click on the cogwheel next to Project Overview and click Project settings!
 7. Under "Your apps" click on "</>" to start a firebase web app!
 8. Register your web app as shown!
 9. Once you have successfully registered, copy the config and replace our current config inside main.js and firebase.js with your own config.
+```
 
 #### Enabling User Authentication 🔐
+```
 10. Click on Build under Project categories on the left side menu, and click on Authentication to set up user authentication.
 11. Select a sign-in method and enable it. For TravelSG, we have used Email/Password and Google authentication.
+```
 
 #### Enabling RealTime Database 🧑🏻‍💻
+```
 12. Click on RealTime Database under Project shortcuts on the left side menu, and click on Create Database.
 13. Select your Realtime Database location and click "Next", followed by clicking the radio button "Start in test mode".
 ```
@@ -149,7 +153,7 @@ Our application could be accessed at: ___________________
 
 
 ## Sub-repository
-We have a separate repository for the MRT webpage of the web application.
+We have a separate repository for the MRT Map page of the web application.
 https://github.com/scyt01/Train-Stations-in-Singapore
 
 
@@ -157,15 +161,16 @@ https://github.com/scyt01/Train-Stations-in-Singapore
 This section is dedicated to these individuals whom our project have reference or adapted codes from:
 1. Google Maps JavaScript API Direction Service documentation (https://developers.google.com/maps/documentation/javascript/directions)
 2. Firebase Back to the Basics (https://www.youtube.com/watch?v=q5J5ho7YUhA&t=713s)
-3. Vue 3 and Firebase Authenitcation (https://www.youtube.com/watch?v=xceR7mrrXsA)
+3. Vue 3 and Firebase Authentication (https://www.youtube.com/watch?v=xceR7mrrXsA)
 4. Bootstrap 5 documentation (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
-5. (https://www.youtube.com/watch?v=rQvOAnNvcNQ)
+5. Getting started with Firebase for the web – Firebase Fundamentals (https://www.youtube.com/watch?v=rQvOAnNvcNQ)
 6. Leaflet GeoJSON map example (https://leafletjs.com/examples/geojson/)
 7. Leaflet Markers with custom icons map example (https://leafletjs.com/examples/custom-icons/)
-8. (https://www.youtube.com/watch?v=rbuSx1yEgV8&t=66s)
-9. (https://www.youtube.com/watch?v=C8rUGJouiQI)
+8. Getting started with Firebase Authentication on the web - Firebase Fundamentals (https://www.youtube.com/watch?v=rbuSx1yEgV8&t=66s)
+9. Upload Large Files in GitHub | Easy Method (https://www.youtube.com/watch?v=C8rUGJouiQI)
 10. W3School HTML iframe tag documentation (https://www.w3schools.com/tags/tag_iframe.ASP)
+11. Trip Planner javascript (https://www.youtube.com/watch?v=OMIgWU1E2eQ)
+12. DataMall API (https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf)
+13. Creating a GitHub Pages site (https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
-12. Trip Planner javascript (https://www.youtube.com/watch?v=OMIgWU1E2eQ)
-13. DataMall API (https://datamall.lta.gov.sg/content/dam/datamall/datasets/LTA_DataMall_API_User_Guide.pdf)
-
+We are grateful to these individuals who have helped us in our project.
