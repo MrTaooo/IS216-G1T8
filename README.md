@@ -51,7 +51,7 @@ Hence, we want to provide tourists with a one-stop travel application that enhan
 * A Google Account, If you don't have one, you can register by clicking [here](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fwww.google.com%2F&hl=en&dsh=S1392577627%3A1635680191747896&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp)
 
 ### Are You READY to LAUNCH TravelSG?! 😙
-1. Download our source code folder by clicking [here](_________________) and unzip it into a new folder such as TravelSG under the root folder i.e. (/wamp64/www/TravelSG/) of wamp64 or (/Applications/htdocs/TravelSG/) for MAMP.
+1. Download our source code folder by clicking [here](https://github.com/MrTaooo/IS216-G1T8/blob/main/README.md) and unzip it into a new folder such as TravelSG under the root folder i.e. (/wamp64/www/TravelSG/) of wamp64 or (/Applications/htdocs/TravelSG/) for MAMP.
 2. Launch VSC Terminal and "change directory" to (/wamp64/www/TravelSG/) for wamp64 or (/Applications/htdocs/TravelSG/) for MAMP 
 3. Run "npm run serve" to launch our web application
     >If "/node_modules/.bin/vue-cli-service: Permission denied" error is surfaced, run the following code "rm -rf node_modules/
@@ -67,24 +67,24 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### As TravelSG is currently running using our firebase configs, in order to change certain firebase logic OR host your own TravelSG app please continue from step 4 onwards
 ```
-4. To create host TravelSG on your own firebase account, go to Google Firebase by clicking [here](https://console.firebase.google.com/) and click create a project.
-5. Enter your project name and create your firebase project accordingly!
-6. On the left hand side of the navigation bar, click on the cogwheel next to Project Overview and click Project settings!
-7. Under "Your apps" click on "</>" to start a firebase web app!
-8. Register your web app as shown!
-9. Once you have successfully registered, copy the config and replace our current config inside main.js and firebase.js with your own config.
+1. To create host TravelSG on your own firebase account, go to Google Firebase by clicking [here](https://console.firebase.google.com/) and click create a project.
+2. Enter your project name and create your firebase project accordingly!
+3. On the left hand side of the navigation bar, click on the cogwheel next to Project Overview and click Project settings!
+4. Under "Your apps" click on "</>" to start a firebase web app!
+5. Register your web app as shown!
+6. Once you have successfully registered, copy the config and replace our current config inside main.js and firebase.js with your own config.
 ```
 
 #### Enabling User Authentication 🔐
 ```
-10. Click on Build under Project categories on the left side menu, and click on Authentication to set up user authentication.
-11. Select a sign-in method and enable it. For TravelSG, we have used Email/Password and Google authentication.
+1. Click on Build under Project categories on the left side menu, and click on Authentication to set up user authentication.
+2. Select a sign-in method and enable it. For TravelSG, we have used Email/Password and Google authentication.
 ```
 
 #### Enabling RealTime Database 🧑🏻‍💻
 ```
-12. Click on RealTime Database under Project shortcuts on the left side menu, and click on Create Database.
-13. Select your Realtime Database location and click "Next", followed by clicking the radio button "Start in test mode".
+1. Click on RealTime Database under Project shortcuts on the left side menu, and click on Create Database.
+2. Select your Realtime Database location and click "Next", followed by clicking the radio button "Start in test mode".
 ```
 
 ## TravelSG Walk-through 🚶🏻‍♀️ ##
