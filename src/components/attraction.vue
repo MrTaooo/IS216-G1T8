@@ -51,7 +51,7 @@ export default {
         image() {
             for (let i in this.result.img) {
                 return `
-                http://localhost:8080/one/maps/api/place/photo?maxwidth=800&photoreference=${this.result.img[i]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                http://localhost:8080/one/maps/api/place/photo?maxwidth=800&photoreference=${this.result.img[i]}&key=.....EnterGoogleAPIKeyHere.....
                 `
             }
         }
@@ -78,7 +78,7 @@ export default {
                 this.isFav = Object.keys(data).indexOf(this.place) != -1
             })
 
-        axios.get(`http://localhost:8080/one/maps/api/place/details/json?place_id=${this.place}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`)
+        axios.get(`http://localhost:8080/one/maps/api/place/details/json?place_id=${this.place}&key=.....EnterGoogleAPIKeyHere.....`)
             .then(response => {
                 // console.log(response.data)
                 // console.log(this.liked)
@@ -148,7 +148,7 @@ export default {
             .catch(error => {
                 error.message
             })
-        // return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.place}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`
+        // return `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.place}&key=.....EnterGoogleAPIKeyHere.....`
     }
 }
 </script>

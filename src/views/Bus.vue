@@ -81,7 +81,7 @@
     <p id="loc"></p>
     <!-- <div id="map"> {{ initMap() }}</div> -->
     <div class="col">
-        <GoogleMap api-key="AIzaSyAtiM46_qHjLFBjoItcHwx6E5UWznDpEUk" style="width: 100%; height: 25vh; background-color: azure;" :center="{ lat: lat, lng: lng }" :zoom="15">
+        <GoogleMap api-key=".....EnterGoogleMapAPIKeyHere....." style="width: 100%; height: 25vh; background-color: azure;" :center="{ lat: lat, lng: lng }" :zoom="15">
             <!-- <Marker v-for="(pos, index) in markers" :options="{ position: pos }" :icon="{url:('../../public/ico/food.ico'), size: {width:30, height:30}}" /> -->
             <!-- <CustomMarker v-for="(pos, index) in markers" :options="{ position: pos }">
                     <img src="../assets/internet.png" width="32" height="32" style="margin-top: 8px" />
@@ -214,7 +214,7 @@ export default {
         //   this.lng = parseFloat(this.lng)
 
         //   axios.get(
-        //       `https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=AIzaSyAzHkvFmyqNxHK7I_Vwqgf0REGquG-HZkk`
+        //       `https://maps.googleapis.com/maps/api/geocode/json?latlng=${this.lat},${this.lng}&key=.....EnterGoogleMapAPIKeyHere.....`
         //   )
         //   .then(response=>{
         //       this.myLocation += response.data.results[0].formatted_address
@@ -241,7 +241,7 @@ export default {
             var loc = document.getElementById("loc")
             loc.innerText = `Latitude: ${this.lat} \u00B0, Longitude: ${this.lng} \u00B0`
 
-            axios.get(`http://localhost:8080/one/maps/api/place/nearbysearch/json?location=${this.lat}%2C${this.lng}&radius=1500&type=bus_station&key=AIzaSyAtiM46_qHjLFBjoItcHwx6E5UWznDpEUk`)
+            axios.get(`http://localhost:8080/one/maps/api/place/nearbysearch/json?location=${this.lat}%2C${this.lng}&radius=1500&type=bus_station&key=.....EnterGoogleAPIKeyHere.....`)
                 .then((response) => {
                     //console.log(response.data, "in response")
                     let result = response.data.results
@@ -249,7 +249,7 @@ export default {
                     var count = 0
                     for (var i of result) {
                         let place = i.reference
-                        axios.get(`http://localhost:8080/one/maps/api/place/details/json?place_id=${place}&key=AIzaSyAtiM46_qHjLFBjoItcHwx6E5UWznDpEUk`)
+                        axios.get(`http://localhost:8080/one/maps/api/place/details/json?place_id=${place}&key=.....EnterGoogleAPIKeyHere.....`)
                             .then((response) => {
                                 //   console.log(response.data)
                                 let name = response.data.result.name

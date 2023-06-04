@@ -120,7 +120,7 @@
                 <strong>Address:</strong> {{this.address}}
                 <br>
                 <strong v-if="this.operating">Operating Hours:</strong> {{this.operating}}
-                <GoogleMap api-key="AIzaSyAtiM46_qHjLFBjoItcHwx6E5UWznDpEUk" style="width: 100%; height: 25vh; padding-bottom: 50px;" :center="{ lat: placeLat, lng: placeLng }" :zoom="15">
+                <GoogleMap api-key=".....EnterGoogleMapAPIKeyHere....." style="width: 100%; height: 25vh; padding-bottom: 50px;" :center="{ lat: placeLat, lng: placeLng }" :zoom="15">
                     <Marker :options="{ position: { lat: placeLat, lng : placeLng }, label: { color: '#000000', fontWeight: 'bold', fontSize: '14px', text: this.selected }}" />
                 </GoogleMap>
                 <div v-for="direction in this.directions" :key="direction">
@@ -144,7 +144,7 @@
 
         <div class="row mt-1" v-if="this.rolling==false && this.spinned">
             <h3 style="color: #e050619d">{{this.spinned}}</h3>
-            <GoogleMap api-key="AIzaSyAtiM46_qHjLFBjoItcHwx6E5UWznDpEUk" style="width: 100%; height: 25vh; padding-bottom: 50px;" :center="{ lat: spinLat, lng: spinLng }" :zoom="15">
+            <GoogleMap api-key=".....EnterGoogleMapAPIKeyHere....." style="width: 100%; height: 25vh; padding-bottom: 50px;" :center="{ lat: spinLat, lng: spinLng }" :zoom="15">
                 <Marker :options="{ position: { lat: spinLat, lng : spinLng }, label: { color: '#000000', fontWeight: 'bold', fontSize: '14px', text: this.spinned }}" />
             </GoogleMap>
             <div v-for="step in this.steps" :key="step">
@@ -264,7 +264,7 @@ export default {
                 .then((coordinates) => {
                     this.myLat = coordinates.lat
                     this.myLng = coordinates.lng
-                    axios.get(`http://localhost:8080/one/maps/api/directions/json?origin=${this.myLat},${this.myLng}&destination=${this.spinLat},${this.spinLng}&mode=transit&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`)
+                    axios.get(`http://localhost:8080/one/maps/api/directions/json?origin=${this.myLat},${this.myLng}&destination=${this.spinLat},${this.spinLng}&mode=transit&key=.....EnterGoogleAPIKeyHere.....`)
                         .then(response => {
                             let data = response.data.routes[0].legs[0]
                             this.spinDirection = {}
@@ -306,7 +306,7 @@ export default {
                 .then((coordinates) => {
                     this.myLat = coordinates.lat
                     this.myLng = coordinates.lng
-                    axios.get(`http://localhost:8080/one/maps/api/directions/json?origin=${this.myLat},${this.myLng}&destination=${this.placeLat},${this.placeLng}&mode=transit&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`)
+                    axios.get(`http://localhost:8080/one/maps/api/directions/json?origin=${this.myLat},${this.myLng}&destination=${this.placeLat},${this.placeLng}&mode=transit&key=.....EnterGoogleAPIKeyHere.....`)
                         .then(response => {
                             let data = response.data.routes[0].legs[0]
                             this.spinDirection = {}
@@ -384,7 +384,7 @@ export default {
                     this.lng = coordinates.lng
                     // this.lng = 103.8239
                     let type = (this.type.split(' ').join('+')).toLowerCase()
-                    let url = `http://localhost:8080/one/maps/api/place/nearbysearch/json?location=${this.lat}%2C${this.lng}&radius=1500&type=${type}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`
+                    let url = `http://localhost:8080/one/maps/api/place/nearbysearch/json?location=${this.lat}%2C${this.lng}&radius=1500&type=${type}&key=.....EnterGoogleAPIKeyHere.....`
                     axios.get(url)
                         .then(response => {
                             this.result = []
@@ -408,7 +408,7 @@ export default {
                             }
                             for (let i of this.result) {
                                 let indiv = {}
-                                indiv.icon = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${i.image}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`
+                                indiv.icon = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${i.image}&key=.....EnterGoogleAPIKeyHere.....`
                                 indiv.name = i.name
                                 this.prizeListOrigin.push(indiv)
                             }
@@ -450,7 +450,7 @@ export default {
                 if (i.name == this.spinned) {
                     this.spinLat = i.lat
                     this.spinLng = i.lng
-                    this.spinResult.image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${i.image}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`
+                    this.spinResult.image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${i.image}&key=.....EnterGoogleAPIKeyHere.....`
                 }
             }
             this.myLocation()
@@ -505,7 +505,7 @@ export default {
             })
 
         const baseURL = 'https://api.openweathermap.org/data/2.5/onecall';
-        const apiKey = '99c8e7eaad0d62e3f251c9b630792929';
+        const apiKey = '.....EnterOpenWeatherAPIKeyHere.....';
         // const apiKey = '0905b1434326d0ec5c9147d13aeb308f'
         const lat = 1.290270
         const lon = 103.851959

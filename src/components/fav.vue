@@ -80,7 +80,7 @@ export default {
         image() {
             for (let i in this.place.image) {
                 return `
-                http://localhost:8080/api/place/photo?maxwidth=800&photoreference=${this.place.image[i]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                http://localhost:8080/api/place/photo?maxwidth=800&photoreference=${this.place.image[i]}&key=.....EnterGoogleAPIKeyHere.....
                 `
             }
         },

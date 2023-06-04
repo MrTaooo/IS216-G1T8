@@ -382,7 +382,7 @@ export default {
             let name = result.name
             let image = ""
             if (result.image != '../assets/noImg.jpg'){
-                image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${result.image[0]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ`
+                image = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${result.image[0]}&key=.....EnterGoogleAPIKeyHere.....`
             }
             else{
                 image = result.image
@@ -579,52 +579,52 @@ export default {
         },
         image1() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[0]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[0]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image2() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[1]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[1]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image3() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[2]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[2]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image4() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[3]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[3]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image5() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[4]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[4]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image6() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[5]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[5]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image7() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[6]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[6]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image8() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[7]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[7]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image9() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[8]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[8]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         },
         image10() {
             return `
-                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[9]}&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ
+                https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photoreference=${this.images[9]}&key=.....EnterGoogleAPIKeyHere.....
                 `
         }
     },

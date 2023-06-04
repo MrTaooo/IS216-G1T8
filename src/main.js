@@ -6,6 +6,7 @@ import * as Vue from 'vue' // in Vue 3
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { MotionPlugin } from '@vueuse/motion'
+
 const app = createApp(App)
 app.use(MotionPlugin)
 app.use(router).mount('#app')
@@ -17,7 +18,7 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC5uwc9Pi3UyjGkO9Iw3VyRUAq_qAGGjL4",
+    apiKey: "enterYourFirebaseAPIKeyHere",
     authDomain: "smart-2e77b.firebaseapp.com",
     databaseURL: "https://smart-2e77b-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "smart-2e77b",

@@ -352,7 +352,7 @@ export default {
             this.display = false
         },
         load(place) {
-            let url = "http://localhost:8080/one/maps/api/place/textsearch/json?query=singapore" + place + "&key=AIzaSyD1ZWK4NHuagmG09Q1f6__-bJoPAf2xBXQ"
+            let url = "http://localhost:8080/one/maps/api/place/textsearch/json?query=singapore" + place + "&key=.....EnterGoogleAPIKeyHere....."
             axios.get(url)
                 .then((response) => {
                     // console.log(response.data.results)
