@@ -14,15 +14,15 @@
 **Members:**
 <ol>
 
-<li> Lin Tao 01397431 | tao.lin.2021@scis.smu.edu.sg </li>
+<li> Lin Tao | tao.lin.2021@scis.smu.edu.sg </li>
 
-<li> Lew Zhen Yuan Jordan 01390623 | jordan.lew.2021@scis.smu.edu.sg </li>
+<li> Lew Zhen Yuan Jordan | jordan.lew.2021@scis.smu.edu.sg </li>
 
-<li >Low Xuanli 01433223 | xuanli.low.2021@scis.smu.edu.sg</li>
+<li >Low Xuanli | xuanli.low.2021@scis.smu.edu.sg</li>
 
-<li> Goh Chee Kiat 01385960 | ckgoh.2021@scis.smu.edu.sg </li>
+<li> Goh Chee Kiat | ckgoh.2021@scis.smu.edu.sg </li>
 
-<li> Chua Yee Tong Sharon 01429770 | sharon.chua.2021@scis.smu.edu.sg </li>
+<li> Chua Yee Tong Sharon | sharon.chua.2021@scis.smu.edu.sg </li>
 
 </ol>
 
